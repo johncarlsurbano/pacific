@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script src="https://kit.fontawesome.com/77a20c4761.js" crossorigin="anonymous"></script>
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logohead">
+            <img src="LOGO.png" alt="logo">
+        </div>
+        <div class="navbar">
+            <div class="nav1">
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="products.html">Products</a>
+                <a href="" id="blogs-border">Blogs</a>
+            </div>
+        </div>
+        <div class="nav">
+            <i class="uil uil-bars navOpenBtn"></i>
+            <ul class="nav-links">
+                <i class="uil uil-times navCloseBtn"></i>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Featured</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+            <div class="icons">
+                <i class="uil uil-search search-icon" id="searchIcon"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+            <div class="search-box">
+                <i class="uil uil-search search-icon"></i>
+                <input type="text" placeholder="Search" />
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="slide" style="background-image: url('HOME IMG 1.png')">
+                    <div class="text1">
+                        <h1>Wake up feeling refreshed with this cotton linen piece!</h1>
+                        <h4>Pacifico Flag</h4>
+                        <div class="price-text-below-price">
+                            <h3 id="price">P599</h3>
+                            <p id="text-below-price">Limited Offer starting <span style="color:black; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5); font-weight: bold;" >May 20, 2023.</span> Don't miss out!</p>
+                            <a href="#" id="view-more-button">View more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('HOME IMG 2.png')">
+                </div>
+                <div class="slide" style="background-image: url('HOME IMG 3.png')">
+                </div>
+            </div>  
+        </div>
+            <div class="new"></div>
+            <div class="featured">
+                <div class="carousel-container2">
+                    <div class="carousel2">
+                        <div class="slide2" style="background-image: url('HOME IMG 1.png')"></div>
+                        <div class="slide2" style="background-image: url('HOME IMG 2.png')"></div>
+                        <div class="slide2" style="background-image: url('HOME IMG 3.png')"></div>
+                    </div>  
+                </div>
+            </div>
+            <div class="sale"></div>
+        <div class="about-us">
+           <div class="about-us-top-text">
+                <h1>About Us</h1>
+                <h3>Welcome to PACIFICO, your go-to online destination for beach and summer-inspired fashion.<br>
+                    Discover our vibrant collection of shirts and accessories that exude the carefree vibes of sandy shores and sun-soaked days.
+                    Embrace the coastal lifestyle with our playful prints, vivid colors, and quality materials, ensuring your style reflects the joy and adventure of endless summers.
+                </h3>
+           </div>
+           <div id="about-us-video1">
+                <video autoplay muted loop>
+                    <source src="about-us-video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div></div>
+           </div>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>

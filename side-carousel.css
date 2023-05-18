@@ -1,0 +1,19 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 900%; /* Width is set to 900% to accommodate 9 images */
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-container:hover .carousel {
+    transform: translateX(-100%);
+}

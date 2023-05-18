@@ -1,0 +1,34 @@
+// Get the carousel element
+const carousel = document.querySelector('.carousel');
+
+// Calculate the width of each slide (image)
+const slideWidth = carousel.clientWidth / 3;
+
+// Get the number of slides (images)
+const slideCount = carousel.children.length;
+
+// Set the initial slide index
+let currentIndex = 0;
+
+// Function to move the carousel to the next slide
+function moveToNextSlide() {
+  if (currentIndex < slideCount - 3) {
+    currentIndex++;
+    carousel.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+  }
+}
+
+// Function to move the carousel to the previous slide
+function moveToPrevSlide() {
+  if (currentIndex > 0) {
+    currentIndex--;
+    carousel.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+  }
+}
+
+// Attach event listeners to the next and previous buttons (assuming you have buttons with class "next-btn" and "prev-btn")
+const nextBtn = document.querySelector('.next-btn');
+const prevBtn = document.querySelector('.prev-btn');
+
+nextBtn.addEventListener('click', moveToNextSlide);
+prevBtn.addEventListener('click', moveToPrevSlide);
